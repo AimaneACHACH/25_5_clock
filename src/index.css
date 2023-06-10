@@ -1,4 +1,10 @@
+*{
+  margin: 0;
+  padding: 0;
+  transition: all 0.08s ease;
+}
 body {
+  background-color: aquamarine;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +16,36 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.controls{
+  flex-direction: row;
+  gap: 5rem;
+}
+.clock{
+  height: 100vh;
+}
+.btn{
+  border: 2px solid black;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  background-color: rgb(244, 228, 228);
+}
+.btn:active{
+  scale: 120%;
+  user-select: none;
+}
+.btn:hover{
+  cursor: pointer;
+}
+.lenght{
+  flex-direction: row;
+  gap: 0.3rem;
 }
